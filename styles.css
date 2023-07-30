@@ -1,0 +1,186 @@
+:root{
+    --background-frame-color: linear-gradient(rgb(150,3,62),rgb(200,3,62));
+  --background-hover:linear-gradient(90deg,rgb(25,25,25)30%,rgb(60,60,60)75%);
+}
+body{
+  background:#ccc;
+}
+#navbar {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  position:fixed;
+  inset: 0 0 auto 0;
+  width:100%;
+  height:80px;
+  background:var(--background-frame-color);
+  margin:0;
+}
+a{
+  text-decoration:none;
+  width:calc(100%/3);
+}
+#div{
+  text-align:center;
+  font-size:25px;
+  color:black;
+}
+#div:hover,#projects a p:hover{
+  border: 1px solid black;
+  background:var(--background-hover);
+  color:white;
+}
+.heading{
+  color:black;
+  padding:10px;
+}
+#welcome-section{
+  border:1px double black;
+  max-width: 500px;
+  height:400px;
+  margin: 80px auto;
+  border-radius:10px;
+  padding:30px;
+  background: linear-gradient(90deg,rgb(200,100,0),rgb(255,255,255));
+  text-align:center;
+}
+#welcome-section p{
+  font-family:cursive;
+  font-size:20px;
+  box-shadow: 5px -5px 35px 10px black; 
+  background-color:white;
+}
+#welcome-section h1{
+  font-family:Helvetica;
+  text-align:center;
+  font-size:50px;
+  color:black;
+}
+hr{
+  border:3px solid rgb(150,3,62);
+  margin:35px 0;
+
+}
+#projects{
+max-width: 100%;
+margin:30px 0 0 0;
+background: rgb(150,150,150);
+text-align:center;
+color:black;
+font-size: 35px;
+}
+#projects h1{
+  padding-top: 45px;
+  font-family:Helvetica;
+}
+#projects .project-tile{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 4fr));
+  grid-gap: 25px;
+  padding-bottom: 150px;
+  padding: 0 150px 75px 150px;
+}
+img{
+  width:400px;
+  height:300px;
+}
+#projects a p{
+  text-align:center;
+  width:400px;
+  font-size:25px;
+  background:var(--background-frame-color);
+  margin:0;
+  padding:10px 0;
+  color: black;
+}
+button{
+  width:175px;
+  padding:10px;
+  position: absolute;
+  right:50%;
+  background-color: yellow; 
+}
+button:hover{
+  background:var(--background-hover);
+  color:white;
+  box-shadow: 0 0 10px 10px black;
+}
+#contact{
+  height:250px;
+  width:100%;
+  background-color:white;
+  margin-bottom: 30px;
+}
+#contact h1{
+  text-align: center;
+  font-size: 35px;
+  padding-top:20px;
+  font-family:Helvetica;
+}
+.fab{
+  font-size: 60px;
+}
+.fa-linkedin-in{
+  border: 1px solid blue;
+  padding: 3px;
+  color:white;
+  background-color: rgb(50, 70, 180);
+  border-radius: 15%;
+}
+.linkedin{
+  position:absolute;
+  left: 15%;
+  width:5px;
+}
+.fa-free-code-camp{
+  color:white;
+  background-color: black;
+  border-radius:10px;
+}
+.fcc{
+  position:absolute;
+  left:40%;
+  width:5px;
+}
+.fa-facebook{
+    color: rgb(50, 70, 180);
+}
+.facebook{
+  position:absolute;
+  left: 65%;
+  width:5px;
+}
+.google{
+  position:absolute;
+  left: 90%;
+}
+footer{
+  width:100%;
+  height:60px;
+  background:var(--background-frame-color);
+  
+}
+/*Media query if the screen size is 100px or less the designs */
+@media (max-width: 1000px){
+  #navbar{
+    height:50px;
+  }
+  #div{
+    font-size:16px;
+  }
+  img{
+    width:200px;
+    height:150px;
+  }
+  #projects .project-tile{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 2fr));
+  grid-gap: 25px;
+  padding-bottom: 75px;
+  padding: 0 75px 37.5px 75px;
+}
+#projects a p{
+    width:200px;
+    font-size:15px;
+  }
+}
