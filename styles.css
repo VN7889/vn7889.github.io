@@ -14,7 +14,7 @@ header #navbar div img{
   font-size: 20px;
 }
 #navbar div img:hover,#navbar div span:hover{
-  color: blue;
+  color: aqua;
 }
 .profile-name{
   display: flex;
